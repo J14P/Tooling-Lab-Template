@@ -1,4 +1,4 @@
-class RockPaperScissors {
+export class RockPaperScissors {
   constructor(username) {
     this.username = username;
          this.score = {
@@ -38,9 +38,9 @@ class RockPaperScissors {
          return 'tie'; 
     }
     else if(
-      (userSelection == 'paper' && cpuSelection == 'rock') || 
-      (userSelection == 'scissors' && cpuSelection == 'paper') || 
-      (userSelection == 'rock' && cpuSelection == 'scissors')
+      (userSelection === 'paper' && cpuSelection === 'rock') || 
+      (userSelection === 'scissors' && cpuSelection === 'paper') || 
+      (userSelection === 'rock' && cpuSelection === 'scissors')
     ) { 
       return 'win'; 
     }
